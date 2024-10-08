@@ -1,0 +1,19 @@
+.modal-wrapper {
+
+    position: absolute;
+    z-index: 2;
+    background-color: red;
+    max-width: 600px;
+    margin: 0 auto;
+    top: 30%;
+    background-color: #D3D3D3;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+
+    .form-info {
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+}

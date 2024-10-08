@@ -1,0 +1,104 @@
+body {
+
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+
+    *:focus {
+        outline: none;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+
+    #root {
+        width: 100%;
+        padding: 0px 16px;
+        flex-wrap: wrap;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .main-wrapper {
+        background-color: #fcfaf6;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        border-radius: 8px;
+        padding: 32px;
+
+        .wrapper-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .search-wrapper {
+                border: none;
+                margin: 0px;
+                width: 70%;
+                height: 100%;
+
+                input {
+                    outline-width: 0;
+                    outline: none;
+                }
+            }
+        }
+
+        .users-wrapper {
+            padding: 16px 0px;
+
+            .users-list {
+
+                list-style: none;
+                gap: 16px;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    .user-wrapper {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .user-info {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 10px;
+
+                        }
+
+                        .user-ctas {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+
+}
